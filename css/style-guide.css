@@ -1,0 +1,416 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+ /* =========================================================
+  * Above calls a natural box layout model to all elements.
+  * Below calls no padding on all elements, define everything.
+  * ========================================================= */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+ /* =========================================================
+  * GLOBAL STYLES - These are hidden from the code section
+  * and used only to stylize the style guide.
+  * ========================================================= */
+
+body {
+	color: #000;
+	background-color: #e5e5e5;
+	font-size: 1em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* =========================================================
+ * index-link to be removed when index is actually created
+ * ========================================================= */
+.index-link {
+	padding-top: 48px;
+}
+.index-link a:link {color: #27AE60; font-size: 2em; text-align: center;}
+.index-link a:visited {color: #27AE60;}
+.index-link a:hover {color: #16BD50; text-decoration: underline;}
+.index-link a:active {color: #7F8C8D; }
+/* =========================================================
+ * index-link to be removed when index is actually created
+ * ========================================================= */
+
+div.headline {
+	padding: 73px 0 110px;
+	text-align: center;
+}
+
+div.headline div.logo {
+	width: 236px;
+	height: 144px;
+	margin: 0 auto 26px;
+	overflow: hidden;
+	text-indent: -9999em;
+	background: url(../img/logo.png) center 0 no-repeat;
+	background-size: 236px 144px;
+}
+
+div.headline h1.logo {
+	margin: 10px 0;
+	font: 900 90px/100px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: -2px;
+}
+
+div.headline h1.logo small {
+	display: block;
+	font-size: 22px;
+	color: #27AE60;
+	margin-top: -24px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+	padding: 32px;
+	font-size: 1em;
+}
+
+section {
+	font-size: 0;
+	position: relative;
+}
+
+.section-title {
+	margin-top: 32px;
+	margin-left: -24px;
+	color: #27AE60;
+}
+
+.no-top {
+	margin-top: 0px;
+}
+
+.examples h1,
+.examples h2,
+.examples h3,
+.examples h4,
+.examples h5,
+.examples h6,
+.examples p,
+.examples small {
+	padding-top: 8px;
+	display: inline-block;
+}
+
+.examples, .code {
+	margin: 32px 0 16px 0;
+	display: inline-block;
+}
+
+.title {
+	margin-bottom: 24px;
+	color: #555;
+	font-family: "Ubuntu"
+}
+
+h6.title {
+	margin-bottom: 12px;
+}
+
+p.type-title {
+	display: inline-block;
+	color: #555;
+	font-size: 14px;
+	padding-right: 24px;
+	font-family: "Ubuntu"	
+}
+
+.inner-code {
+	font-family: "Ubuntu";
+	color: #fff;
+	background-color: #222;
+	border: 1px solid #000;
+	padding: 8px;
+	margin-right: 8px;
+	display: inline-block;
+	border-radius: 6px;
+}
+
+.inner-code p.type-title{
+	color: #888;
+}
+
+.inner-code .codes {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.inner-code span {
+	color: #CC9900;
+}
+
+ /* =========================================================
+  * TYPOGRAPHY & SIZING - all styles for typography & tags used.
+  * ========================================================= */
+section {
+	background-color: #fff;
+	padding: 32px 48px;
+}
+
+h1 {
+	font-size: 56px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 42px;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 36px;
+	font-weight: 500;
+}
+
+h5 {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 24px;
+	font-weight: 200;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 200;
+}
+
+small {
+	font-weight: 200;
+	font-size: 14px;
+}
+
+ /* =========================================================
+  * IMAGE STYLES - each images default styles
+  * ========================================================= */
+
+img {
+	max-width: 100%;
+	border-radius: 10px;
+	border: 0px solid #000;
+	display: block;
+	height: auto;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* =========================================================
+  * INPUT STYLES - each inputs default styles
+  * ========================================================= */
+
+.form-default {
+	height: 42px;
+	padding: 8px 12px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.467;
+	color: #7F8C8D;
+	border: 2px solid #7F8C8D;
+	border-radius: 6px;
+	box-shadow: none;
+	-webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
+	transition: border .25s linear,color .25s linear,background-color .25s linear;
+}
+
+.form-default:focus {
+	border-color: #27AE60;
+	outline: 0;
+	box-shadow: none;
+}
+
+ /* =========================================================
+  * BUTTON STYLES - each buttons default styles
+  * ========================================================= */
+ .button-link {
+ 	text-align: center;
+ 	white-space: normal;
+ 	padding: 10px 20px;
+	font-size: 16px;
+	line-height: 24px;
+	border-radius: 6px;
+	color: #fff;
+	background-color: #27AE60;
+	-webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
+	transition: border .25s linear,color .25s linear,background-color .25s linear;
+	-webkit-font-smoothing: subpixel-antialiased;
+	text-decoration: none;
+ }
+
+ .button-link:visited{
+ 	color: #fff;
+	background-color: #27AE60;
+ }
+
+ .button-link:hover, .button-link:focus {
+ 	color: #fff;
+	background-color: #2ECC71;
+	border-color: #2ECC71;
+ }
+
+ .button-link:active {
+ 	background: #95A5A6;
+	border-color: #95A5A6;
+ }
+
+ /* =========================================================
+  * NAVIGATION STYLES - each nav items default styles
+  * ========================================================= */
+
+nav.navigation {
+	font-size: 14px;
+	padding-top: 16px;
+}
+
+nav.navigation ul {
+	font-size: 0;
+}
+
+nav.navigation ul li {
+	box-sizing: border-box;
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav.navigation ul li a {
+	text-align: center;
+ 	white-space: normal;
+ 	padding: 24px 32px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+	background-color: #27AE60;
+	-webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
+	transition: border .25s linear,color .25s linear,background-color .25s linear;
+	-webkit-font-smoothing: subpixel-antialiased;
+	text-decoration: none;
+}
+
+nav.navigation ul li:first-child a {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+nav.navigation ul li:last-child a {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+nav.navigation ul li a:visited{
+ 	color: #fff;
+	background-color: #27AE60;
+ }
+
+ nav.navigation ul li a:hover, nav.navigation ul li a:focus {
+ 	color: #fff;
+	background-color: #2ECC71;
+	border-color: #2ECC71;
+ }
+
+nav.navigation ul li a:active {
+ 	background: #95A5A6;
+	border-color: #95A5A6;
+ }
+
+ nav.navigation ul li a.active {
+ 	color: #fff;
+	background-color: #2ECC71;
+	border-color: #2ECC71;
+}
+
+ /* =========================================================
+  * WIDTH CLASSES - percentages used to maintain inline-blocks
+  * ========================================================= */
+
+.hundred {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+}
+
+.ninty {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 90%;
+}
+
+.eighty {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 80%;
+}
+
+.threequarters {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 75%;
+}
+
+.seventy {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 70%;
+}
+
+.sixty {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 60%;
+}
+
+.fifty {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 50%;
+}
+
+.fourty {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 40%;
+}
+
+.third {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 33.33%;
+}
+
+.thirty {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 30%;
+}
+
+.quarter {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 25%;
+}
+
+.twenty {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 20%;
+}
+
+.ten {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 10%;
+}

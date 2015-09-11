@@ -1,0 +1,11 @@
+body {
+  padding-top: 50px;
+}
+
+.nametitle{
+  margin-bottom: 1em;
+}
+
+.yogamat{
+  background: url('../img/Mat.jpg') no-repeat center center;
+}

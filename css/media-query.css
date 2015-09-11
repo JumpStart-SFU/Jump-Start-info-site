@@ -1,0 +1,507 @@
+/* Media Queries */
+@media only screen and (min-width : 1px) {
+	 .container {
+    	box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.hidden-sm {
+		display: none;
+	}
+	nav {
+		height: 50px;
+	}
+	nav ul li a:link, nav ul li a:visited {
+		font-size: .75em;
+		color: #e5e5e5;
+	}
+	nav ul li a:hover, nav ul li a:focus {
+		background-color: #444;
+		color: #fff;
+	}
+	nav ul li.active {
+		background-color: #222;
+	}
+	.nav-list-desktop {
+		display: none;
+	}
+	.nav-list-mobile {
+		display: inline-block;
+	}
+	.active.hundred a {
+		font-size: 1em;
+	}
+	.hero-text {
+		font-size: 1.5em;
+	}
+	.hero-text2 {
+		font-size: 2em;
+	}
+	.hero-name {
+		font-size: 1.5em;
+	}
+	.hero-passion {
+		font-size: 1.5em;
+	}
+	.page-title-mobile {
+		display: inline-block;
+	}
+	.section-title {
+		margin-left: 0px;
+	}
+	.intro-text {
+		padding-top: 24px;
+	}
+	.intro-text:first-child {
+		padding-top: 0;
+	}
+	.locations {
+		padding-bottom: 0;
+	}
+	.location01, .location02, .location03 {
+		margin-bottom: 0;
+	}
+	.location-info li {
+		opacity: 1;
+	}
+	#healthservices div {
+		height: 150px;
+	}
+
+	.recommendations{
+	padding-bottom: 125em;
+	margin-bottom: 10px;
+	font-size: 0.5em;
+	line-height: 2em;
+	}
+
+	.book-link.submit-link:link {top: 20px;}
+	.ninty 	 {width: 100%;}
+	.eighty  {width: 100%;}
+	.seventy {width: 100%;}
+	.sixty 	 {width: 100%;}
+	.fifty 	 {width: 100%;}
+	.fourty	 {width: 100%;}
+	.third 	 {width: 100%;}
+	.thirty  {width: 100%;}
+	.quarter {width: 100%;}
+	.twenty  {width: 100%;}
+	.ten 	 {width: 100%;}
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .container {
+    	box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.hidden-sm {
+		display: none;
+	}
+	
+
+	nav {
+		height: 50px;
+	}
+	nav ul li a:link, nav ul li a:visited {
+		font-size: .75em;
+		color: #e5e5e5;
+	}
+	nav ul li a:hover, nav ul li a:focus {
+		background-color: #444;
+		color: #fff;
+	}
+	nav ul li.active {
+		background-color: #222;
+	}
+	.nav-list-desktop {
+		display: none;
+	}
+	.nav-list-mobile {
+		display: inline-block;
+	}
+	.active.hundred a {
+		font-size: 1em;
+	}
+	.hero-text {
+		font-size: 2em;
+	}
+	
+	.hero-name {
+		font-size: 1.5em;
+	}
+	.hero-passion {
+		font-size: 1.5em;
+	}
+	.page-title-mobile {
+		display: inline-block;
+	}
+	.section-title {
+		margin-left: 0px;
+	}
+	.intro-text {
+		padding-top: 24px;
+	}
+	.intro-text:first-child {
+		padding-top: 0;
+	}
+	.locations {
+		padding-bottom: 0;
+	}
+	.location01, .location02, .location03 {
+		margin-bottom: 0;
+	}
+	.location-info li {
+		opacity: 1;
+	}
+	#healthservices div {
+		height: 200px;
+	}
+
+	.recommendations{
+	padding-bottom: 100em;
+	margin-bottom: 10px;
+	font-size: 0.5em;
+	line-height: 2em;
+	}
+
+	.book-link.submit-link:link {top: 20px;}
+	.ninty 	 {width: 100%;}
+	.eighty  {width: 100%;}
+	.seventy {width: 100%;}
+	.sixty 	 {width: 100%;}
+	.fifty 	 {width: 100%;}
+	.fourty	 {width: 100%;}
+	.third 	 {width: 100%;}
+	.thirty  {width: 100%;}
+	.quarter {width: 100%;}
+	.twenty  {width: 100%;}
+	.ten 	 {width: 100%;}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	h1 {
+		font-size: 1.75em;
+	}
+	.container {
+		box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.hidden-sm {
+		display: inline-block;
+	}
+	nav {
+		height: 50px;
+	}
+	nav ul li a:link, nav ul li a:visited {
+		font-size: 1em;
+		color: #e5e5e5;
+	}
+	nav ul li a:hover, nav ul li a:focus {
+		background-color: #444;
+		color: #fff;
+	}
+	nav ul li.active {
+		background-color: #222;
+	}
+	.nav-list-desktop {
+		display: none;
+	}
+	.nav-list-mobile {
+		display: inline-block;
+	}
+	.active.hundred a {
+		font-size: 1.5em;
+	}
+	.hero-text {
+		font-size: 2em;
+	}
+	.hero-name {
+		font-size: 1.5em;
+	}
+	.hero-passion {
+		font-size: 1.5em;
+	}
+	.page-title-mobile {
+		display: inline-block;
+	}
+	.section-title {
+		margin-left: 0px;
+	}
+	.intro-text {
+		padding-top: 24px;
+	}
+	.intro-text:first-child {
+		padding-top: 0;
+	}
+	.locations {
+		padding-bottom: 0;
+	}
+	.location01, .location02, .location03 {
+		margin-bottom: 0;
+	}
+	.location-info li {
+		opacity: 1;
+	}
+	#healthservices div {
+		height: 200px;
+	}
+	.book-link.submit-link:link {top: 20px;}
+	.ninty 	 {width: 100%;}
+	.eighty  {width: 100%;}
+	.seventy {width: 100%;}
+	.sixty 	 {width: 100%;}
+	.fifty 	 {width: 100%;}
+	.fourty	 {width: 100%;}
+	.third 	 {width: 100%;}
+	.thirty  {width: 100%;}
+	.quarter {width: 100%;}
+	.twenty  {width: 100%;}
+	.ten 	 {width: 100%;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	h1 {
+		font-size: 1.75em;
+	}
+	.container {
+		box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.hidden-sm {
+		display: inline-block;
+	}
+	nav {
+		height: 50px;
+	}
+	nav ul li a:link, nav ul li a:visited {
+		font-size: 1em;
+		color: #e5e5e5;
+	}
+	nav ul li a:hover, nav ul li a:focus {
+		background-color: #444;
+		color: #fff;
+	}
+	nav ul li.active {
+		background-color: #222;
+	}
+	.nav-list-desktop {
+		display: none;
+	}
+	.nav-list-mobile {
+		display: inline-block;
+	}
+	.active.hundred a {
+		font-size: 1.5em;
+	}
+	.hero-text {
+		font-size: 3em;
+	}
+	.hero-name {
+		font-size: 2.5em;
+	}
+	.hero-passion {
+		font-size: 2.5em;
+	}
+	.page-title-mobile {
+		display: inline-block;
+	}
+	.section-title {
+		margin-left: 12px;
+	}
+	.intro-text {
+		padding-top: 0;
+	}
+	.intro-text:first-child {
+		padding-top: 0;
+	}
+	.locations {
+		padding-bottom: 0;
+	}
+	.location01, .location02, .location03 {
+		margin-bottom: 0;
+	}
+	.location-info li {
+		opacity: 0;
+	}
+	#healthservices div {
+		height: 250px;
+	}
+	.book-link.submit-link:link {top: 20px;}
+	.ninty 	 {width: 100%;}
+	.eighty  {width: 100%;}
+	.seventy {width: 100%;}
+	.sixty 	 {width: 100%;}
+	.fifty 	 {width: 100%;}
+	.fourty	 {width: 100%;}
+	.third 	 {width: 100%;}
+	.thirty  {width: 100%;}
+	.quarter {width: 100%;}
+	.twenty  {width: 100%;}
+	.ten 	 {width: 100%;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	h1 {
+		font-size: 1.75em;
+	}
+	.container {
+		box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.hidden-sm {
+		display: inline-block;
+	}
+	nav {
+		height: 50px;
+	}
+	nav ul li a:link, nav ul li a:visited {
+		font-size: 1em;
+		color: #fff;
+	}
+	nav ul li a:hover, nav ul li a:focus {
+		background-color: #000;
+		color: #e5e5e5;
+	}
+	nav ul li.active {
+		background-color: #333;
+	}
+	.nav-list-desktop {
+		display: block;
+	}
+	.nav-list-mobile {
+		display: none;
+	}
+	.hero-text {
+		font-size: 3em;
+	}
+	.hero-name {
+		font-size: 2.5em;
+	}
+	.hero-passion {
+		font-size: 2.5em;
+	}
+	.page-title-mobile {
+		display: none;
+	}
+	.section-title {
+		margin-left: 12px;
+	}
+	.intro-text {
+		padding-top: 0;
+	}
+	.intro-text:first-child {
+		padding-top: 0;
+	}
+	.locations {
+		padding-bottom: 32px;
+	}
+	.location01, .location02, .location03 {
+		margin-bottom: 8px;
+	}
+	.location-info li {
+		opacity: 0;
+	}
+	#healthservices div {
+		height: 250px;
+	}
+	.book-link.submit-link:link {top: 0px;}
+	.ninty 	 {width: 90%;}
+	.eighty  {width: 80%;}
+	.seventy {width: 70%;}
+	.sixty 	 {width: 60%;}
+	.fifty 	 {width: 50%;}
+	.fourty	 {width: 40%;}
+	.third 	 {width: 33.33%;}
+	.thirty  {width: 30%;}
+	.quarter {width: 25%;}
+	.twenty  {width: 20%;}
+	.ten 	 {width: 10%;}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	h1 {
+		font-size: 1.75em;
+	}
+	.container {
+		box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.hidden-sm {
+		display: inline-block;
+	}
+	nav {
+		height: 50px;
+	}
+	nav ul li a:link, nav ul li a:visited {
+		font-size: 1em;
+		color: #fff;
+	}
+	nav ul li a:hover, nav ul li a:focus {
+		background-color: #000;
+		color: #e5e5e5;
+	}
+	nav ul li.active {
+		background-color: #333;
+	}
+	.nav-list-desktop {
+		display: block;
+	}
+	.nav-list-mobile {
+		display: none;
+	}
+	.hero-text {
+		font-size: 3em;
+	}
+	.hero-name {
+		font-size: 2.5em;
+	}
+	.hero-passion {
+		font-size: 2.5em;
+	}
+	.page-title-mobile {
+		display: none;
+	}
+	.section-title {
+		margin-left: 12px;
+	}
+	.intro-text {
+		padding-top: 0;
+	}
+	.intro-text:first-child {
+		padding-top: 0;
+	}
+	.locations {
+		padding-bottom: 32px;
+	}
+	.location01, .location02, .location03 {
+		margin-bottom: 8px;
+	}
+	.location-info li {
+		opacity: 0;
+	}
+	#healthservices div {
+		height: 250px;
+	}
+	.book-link.submit-link:link {top: 0px;}
+	.ninty 	 {width: 90%;}
+	.eighty  {width: 80%;}
+	.seventy {width: 70%;}
+	.sixty 	 {width: 60%;}
+	.fifty 	 {width: 50%;}
+	.fourty	 {width: 40%;}
+	.third 	 {width: 33.33%;}
+	.thirty  {width: 30%;}
+	.quarter {width: 25%;}
+	.twenty  {width: 20%;}
+	.ten 	 {width: 10%;}
+}
