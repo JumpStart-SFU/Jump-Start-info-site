@@ -209,12 +209,18 @@
 		<!-- EMAIL -->
 		<span class="anchor" id="contact"></span>
 		<div class="contactContent">
+          <div class="contact">
+            <h2>Contact us!</h2>
+            Fill out our <a href="registerForm.html">online form</a>.
+            <br/><br/>
+          </div>
+<!--
 			<div class="contact" id="wufoo-mk46d230mnvaq8">
 			  Fill out our <a href="https://cky4.wufoo.com/forms/mk46d230mnvaq8">online form</a>.
 			</div>
+-->
 		</div>
 		<!-- EMAIL END -->
-        <?php require_once('email.php'); ?>
 	</div>
 	<!-- CONTENT END-->
 	
@@ -243,7 +249,7 @@
 	<!-- FAQ -->
 	
 	<!-- FOOTER -->
-	<div class="footer" >
+	<div class="footer">
 		<div class="footerContent">
 			<h6>CONNECT WITH US!</h6>
 			<a href="https://www.facebook.com/Conextus-1490009591318369"><img src="img/facebookIcon.png" class = "footerIcon"/></a>

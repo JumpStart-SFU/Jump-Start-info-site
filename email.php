@@ -73,10 +73,3 @@ else {
 }
 
 ?>
-
-<form action="">
-  
-</form>
-
-
-
