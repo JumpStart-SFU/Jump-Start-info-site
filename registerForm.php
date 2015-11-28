@@ -1,3 +1,18 @@
+<?php
+/**
+ *
+ */
+
+require_once 'functions/email.php';
+
+if (isset($_POST["name"]) &&
+    isset($_POST["email"]) &&
+    isset($_POST["subject"])) {
+  sendEmail();
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +45,7 @@
     <div class ="registrationForm">
       <h2>Contact Us!</h2>
       <div class = "grid_100">
-        <form action="email.php" method="post" id="usrform">
+        <form action="registerForm.php" method="post" id="usrform">
           <ul class="registerForm">
             <li>Name</li><input type="text" name="name" placeholder="John Adams" required/>
             <li>Email</li><input type="email" name="email" placeholder="john@email.com" required/>

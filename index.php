@@ -24,7 +24,7 @@
 </head>
 <body>
   <!-- HEADER / NAVIGATION -->
-  <div class = "header">
+  <div class="header">
     <div class="grid_100">
       <ul>
         <li class="grid_25"><a href="#home" class="topNav">Conextus</a></li>
@@ -113,7 +113,7 @@
 			<div class = "registerContent">
 				<div class = "register">
 					<div class ="test">
-						<p class = "registerButton"><a href="registerForm.php">Register for Upcoming Beta!</a></p>
+						<p class = "registerButton"><a href="registerForm.php" target="_blank">Register for Upcoming Beta!</a></p>
 						<!--
 						<form>
 							<ul class="registerForm">
@@ -211,7 +211,7 @@
 		<div class="contactContent">
           <div class="contact">
             <h2>Contact us!</h2>
-            Fill out our <a href="registerForm.php">online form</a>.
+            Fill out our <a href="registerForm.php" target="_blank">online form</a>.
             <br/><br/>
           </div>
 <!--
