@@ -113,7 +113,7 @@
 			<div class = "registerContent">
 				<div class = "register">
 					<div class ="test">
-						<p class = "registerButton"><a href="registerForm.html">Register for Upcoming Beta!</a></p>
+						<p class = "registerButton"><a href="registerForm.php">Register for Upcoming Beta!</a></p>
 						<!--
 						<form>
 							<ul class="registerForm">
@@ -211,7 +211,7 @@
 		<div class="contactContent">
           <div class="contact">
             <h2>Contact us!</h2>
-            Fill out our <a href="registerForm.html">online form</a>.
+            Fill out our <a href="registerForm.php">online form</a>.
             <br/><br/>
           </div>
 <!--
@@ -252,9 +252,9 @@
 	<div class="footer">
 		<div class="footerContent">
 			<h6>CONNECT WITH US!</h6>
-			<a href="https://www.facebook.com/Conextus-1490009591318369"><img src="img/facebookIcon.png" class = "footerIcon"/></a>
-			<a href="https://twitter.com/ConexterInc"><img src="img/twitterIcon.png" class = "footerIcon"/></a>
-			<a href="https://instagram.com/conextus.inc/"><img src="img/instagramIcon.png" class = "footerIcon"/></a>
+			<a href="https://www.facebook.com/Conextus-1490009591318369" target="_blank"><img src="img/facebookIcon.png" class = "footerIcon"/></a>
+			<a href="https://twitter.com/ConexterInc" target="_blank"><img src="img/twitterIcon.png" class = "footerIcon"/></a>
+			<a href="https://instagram.com/conextus.inc/" target="_blank"><img src="img/instagramIcon.png" class = "footerIcon"/></a>
 			<p>Copyright © 2016 | Conextus Incorporated | All Rights Reserved.</p>
 		</div>
 	</div>

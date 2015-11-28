@@ -19,7 +19,7 @@
   <div class = "header">
     <div class="grid_100">
       <ul>
-        <li class = "grid_25"><a href="index.html" class="topNav">Conextus</a></li>
+        <li class = "grid_25"><a href="index.php" class="topNav">Conextus</a></li>
       </ul>
     </div>
   </div>
@@ -52,9 +52,9 @@
   <div class = "footer" id="formFooter">
     <div class = "footerContent">
       <h6>CONNECT WITH US!</h6>
-      <a href="https://www.facebook.com/Conextus-1490009591318369"><img src="img/facebookIcon.png" class = "footerIcon"/></a>
-      <a href="https://twitter.com/ConexterInc"><img src="img/twitterIcon.png" class = "footerIcon"/></a>
-      <a href="https://instagram.com/conextus.inc/"><img src="img/instagramIcon.png" class = "footerIcon"/></a>
+      <a href="https://www.facebook.com/Conextus-1490009591318369" target="_blank"><img src="img/facebookIcon.png" class = "footerIcon"/></a>
+      <a href="https://twitter.com/ConexterInc" target="_blank"><img src="img/twitterIcon.png" class = "footerIcon"/></a>
+      <a href="https://instagram.com/conextus.inc/" target="_blank"><img src="img/instagramIcon.png" class = "footerIcon"/></a>
       <p>Copyright © 2016 | Conextus Incorporated | All Rights Reserved.</p>
     </div>
   </div>
