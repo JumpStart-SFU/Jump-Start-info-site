@@ -2,15 +2,14 @@
 /**
  *
  */
-
-require_once 'functions/email.php';
+require_once(__DIR__ . '/functions/email.php');
+require_once(__DIR__ . '/PHPMailer-master/PHPMailerAutoload.php');
 
 if (isset($_POST["name"]) &&
     isset($_POST["email"]) &&
     isset($_POST["subject"])) {
   sendEmail();
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +63,7 @@ if (isset($_POST["name"]) &&
   <!-- FORM END -->
 	
   <!-- FOOTER -->
-  <div class = "footer" id="formFooter">
+  <div class="footer" id="formFooter">
     <div class = "footerContent">
       <h6>CONNECT WITH US!</h6>
       <a href="https://www.facebook.com/Conextus-1490009591318369" target="_blank"><img src="img/facebookIcon.png" class = "footerIcon"/></a>

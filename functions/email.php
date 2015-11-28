@@ -2,7 +2,7 @@
 /**
  * Function that deals with all emails
  */
-require_once '/PHPMailer-master/PHPMailerAutoload.php';
+
 date_default_timezone_set('America/Vancouver'); // Setting timezone to Vancouver
 
 /**
@@ -53,7 +53,7 @@ function sendEmail() {
   $mail->Password = "";
 
   //Set who the message is to be sent from
-  //$mail->setFrom($name, $email);
+  $mail->setFrom($name, $email);
 
   //Set an alternative reply-to address
   $mail->addReplyTo($name, $email);
