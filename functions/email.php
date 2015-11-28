@@ -31,13 +31,13 @@ function sendEmail() {
   $mail->Debugoutput = 'html';
 
   //Set the hostname of the mail server
-  $mail->Host = 'smtp.gmail.com';
+  $mail->Host = 'beaubien.web-dns1.com';
   // use
   // $mail->Host = gethostbyname('smtp.gmail.com');
   // if your network does not support SMTP over IPv6
 
   //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-  $mail->Port = 587;
+  $mail->Port = 465;
 
   //Set the encryption system to use - ssl (deprecated) or tls
   $mail->SMTPSecure = 'tls';
@@ -46,22 +46,18 @@ function sendEmail() {
   $mail->SMTPAuth = true;
 
   //Username to use for SMTP authentication - use full email address for gmail
-  $mail->Username = "incorporatedconextus@gmail.com";
+  $mail->Username = "inquiry@conextus.ca";
 
   //Password to use for SMTP authentication
   //Do not hardcode it!!!
-  $mail->Password = "";
+  $mail->Password = "marshmellow";
 
   //Set who the message is to be sent from
-  $mail->setFrom($name, $email);
-
-  //Set an alternative reply-to address
-  $mail->addReplyTo($name, $email);
+  $mail->setFrom($email, $name);
 
   //Set who the message is to be sent to
   $mail->addAddress('incorporatedconextus@gmail.com', 'Conextus Incorporated');
-
-  //Set the subject line
+  
   $mail->Subject = "$subject from $name of $university with email '$email'";
 
   $mail->msgHTML($body, dirname(__FILE__), true); //Create message bodies and embed images

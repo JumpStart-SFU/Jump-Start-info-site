@@ -57,6 +57,7 @@ if (isset($_POST["name"]) &&
           
           <input type="submit" name="submit_button" value="Submit"/>
         </form>
+        <p>If our form is having issues, contact us instead at <a href="mailto:incorporatedconextus@gmail.com">incorporatedconextus@gmail.com</a></p>
       </div>
     </div>
   </div>
