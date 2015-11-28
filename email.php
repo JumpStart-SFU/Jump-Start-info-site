@@ -1,9 +1,9 @@
 <?php
+require_once '/PHPMailer-master/PHPMailerAutoload.php';
+
 $mail = new PHPMailer;
 
 date_default_timezone_set('America/Vancouver'); // Setting timezone to Vancouver
-
-require_once '/PHPMailer-master/PHPMailerAutoload.php';
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
@@ -36,26 +36,30 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "username@gmail.com";
+$mail->Username = "incorporatedconextus@gmail.com";
 
 //Password to use for SMTP authentication
-$mail->Password = "yourpassword";
+$mail->Password = "";
 
 //Set who the message is to be sent from
-$mail->setFrom('from@example.com', 'Conextus');
+$mail->setFrom('incorporatedconextus@gmail.com', 'Conextus Incorporated');
 
 //Set an alternative reply-to address
-$mail->addReplyTo('replyto@example.com', 'Conextus');
+// $mail->addReplyTo('incorporatedconextus@yahoo.com', 'Conextus Incorporated');
 
 //Set who the message is to be sent to
-$mail->addAddress('whoto@example.com', 'John Doe');
+$mail->addAddress('incorporatedconextus@gmail.com', 'Conextus Incorporated');
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$university = $_POST["university"];
+$subject = $_POST["subject"];
+$body = $_POST["body"];
 
 //Set the subject line
-$mail->Subject = 'PHPMailer GMail SMTP test';
+$mail->Subject = "$subject from $name of $university";
 
-//Read an HTML message body from an external file, convert referenced images to embedded,
-//convert HTML into a basic plain-text alternative body
-$mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
+$mail->msgHTML($body, dirname(__FILE__), true); //Create message bodies and embed images
 
 //Replace the plain text body with one created manually
 $mail->AltBody = 'This is a plain-text message body';
@@ -65,11 +69,11 @@ $mail->AltBody = 'This is a plain-text message body';
 
 //send the message, check for errors
 if (!$mail->send()) {
-    echo "Mailer Error: " . $mail->ErrorInfo;
+  echo "Mailer Error: " . $mail->ErrorInfo;
 }
 
 else {
-    echo "Message sent!";
+  echo "Message sent!";
 }
 
 ?>

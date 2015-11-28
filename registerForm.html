@@ -30,14 +30,14 @@
     <div class ="registrationForm">
       <h2>Contact Us!</h2>
       <div class = "grid_100">
-        <form action="" method="post" id="usrform">
+        <form action="email.php" method="post" id="usrform">
           <ul class="registerForm">
             <li>Name</li><input type="text" name="name" placeholder="John Adams" required/>
             <li>Email</li><input type="email" name="email" placeholder="john@email.com" required/>
             <li>University</li><input type="text" name="university" placeholder="Avery University"/>
             <li>Subject</li>
-            <input type="radio" name="subject" value="beta"/> Open Beta
-            <input type="radio" name="subject" value="inquiry"/> Inquiry<br/>
+            <input type="radio" name="subject" value="Request for Open Beta"/> Open Beta
+            <input type="radio" name="subject" value="Inquiry"/> Inquiry<br/>
             <li>Body</li><textarea name="body" form="usrform" rows="4" cols="50" placeholder="I would like to sign up for your open beta." required></textarea>
           </ul>
           
