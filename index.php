@@ -1,3 +1,11 @@
+<?php
+/**
+ * Index File
+ *
+ */
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -206,6 +214,7 @@
 			</div>
 		</div>
 		<!-- EMAIL END -->
+        <?php require_once('email.php'); ?>
 	</div>
 	<!-- CONTENT END-->
 	
