@@ -1,0 +1,2 @@
+[20-Dec-2015 09:39:47 America/Montreal] PHP Parse error:  syntax error, unexpected '$mail' (T_VARIABLE) in /home/conextus/public_html/functions/email.php on line 63
+[20-Dec-2015 09:39:49 America/Montreal] PHP Parse error:  syntax error, unexpected '$mail' (T_VARIABLE) in /home/conextus/public_html/functions/email.php on line 63

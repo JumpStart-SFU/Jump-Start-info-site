@@ -58,7 +58,8 @@ function sendEmail() {
   //Set who the message is to be sent to
   $mail->addAddress('incorporatedconextus@gmail.com', 'Conextus Incorporated');
   
-  $mail->Subject = "$subject from $name of $university with email '$email'";
+  $subject = "$subject from $name of $university with email '$email'";
+  $mail->Subject = $subject;
 
   $mail->msgHTML($body, dirname(__FILE__), true); //Create message bodies and embed images
 
@@ -67,9 +68,15 @@ function sendEmail() {
 
   //Attach an image file
   //$mail->addAttachment('images/phpmailer_mini.png');
+  
+  $to = 'incorporatedconextus@gmail.com';
+  $message = 'hello';
+  $headers = "From: $email" . "\r\n" .
+    "Reply-To: $email" . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
 
   //send the message, check for errors
-  if (!$mail->send()) {
+  if (!$mail->send() && !mail($to, $subject, $message, $headers)) {
     echo "Mailer Error: " . $mail->ErrorInfo;
   }
 
