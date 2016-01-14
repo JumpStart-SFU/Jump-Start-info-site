@@ -31,6 +31,12 @@ function sendEmail() {
   }
 
   else {
+    $headers = "From: incorporatedconextus@gmail.com" . "\r\n" .
+    "Reply-To: incorporatedconextus@gmail.com" . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+    $subject = "Copy of your email: " . $subject;
+    mail($email, $subject, $body, $headers);
+    
     echo "Message sent!";
   }
 }
