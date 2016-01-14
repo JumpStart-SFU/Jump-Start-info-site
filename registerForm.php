@@ -3,7 +3,6 @@
  *
  */
 require_once(__DIR__ . '/functions/email.php');
-require_once(__DIR__ . '/PHPMailer-master/PHPMailerAutoload.php');
 
 if (isset($_POST["name"]) &&
     isset($_POST["email"]) &&
