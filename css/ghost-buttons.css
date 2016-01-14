@@ -472,4 +472,8 @@ h2 {
     background: #EA7B00;
     color: #fff;
 }
+
+.noshow {
+  display:none;
+}
 </style>

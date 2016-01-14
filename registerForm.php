@@ -4,11 +4,16 @@
  */
 require_once(__DIR__ . '/functions/email.php');
 
-if (isset($_POST["name"]) &&
+if (isset($_POST['leaveblank']) && !empty($_POST['leaveblank'])) {
+   echo "Form has been rejected!";
+}
+
+elseif (isset($_POST["name"]) &&
     isset($_POST["email"]) &&
     isset($_POST["body"])) {
   sendEmail();
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +30,7 @@ if (isset($_POST["name"]) &&
 </head>
 <body>
   <div align="Right">
-    <a class="ghost-button-semi-transparent" href="index.html">Conextus</a>
+    <a class="ghost-button-semi-transparent" href="index.php">Conextus</a>
     <a class="ghost-button-semi-transparent" href="https://www.surveymonkey.com/r/WCFSQS2">Try Manually</a>
   </div>
   <div class="container1">
@@ -49,6 +54,12 @@ if (isset($_POST["name"]) &&
         <label for="field4"><span>Message <span class="required">*</span></span>
           <textarea name="body" class="textarea-field" placeholder="Hello World!" maxlength="" required></textarea>
         </label>
+        <!--
+        <label><a class="noshow">Leave this blank: </a>
+          <input type="text" class="noshow" name="leaveblank">
+        </label>
+-->
+        <!-- NEED HELP HIDING THIS ON LIVE SITE -->
         
         <label><span>&nbsp;</span>
           <input type="submit" value="Submit"/>
