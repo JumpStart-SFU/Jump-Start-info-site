@@ -6,7 +6,7 @@ require_once(__DIR__ . '/functions/email.php');
 
 if (isset($_POST["name"]) &&
     isset($_POST["email"]) &&
-    isset($_POST["subject"])) {
+    isset($_POST["body"])) {
   sendEmail();
 }
 ?>
@@ -37,18 +37,19 @@ if (isset($_POST["name"]) &&
       <div class="form-style-2-heading">Provide your information</div>
       <form action="registerForm.php" method="post">
         <label for="field1"><span>Name<span class="required">*</span></span>
-          <input type="text" class="input-field" name="name" placeholder="John Smith"/>
+          <input type="text" class="input-field" name="name" placeholder="John Smith" maxlength="72" required/>
         </label>
         <label for="field2"><span>Email <span class="required">*</span></span>
-          <input type="text" class="input-field" name="email" placeholder="john@smith.com"/>
+          <input type="email" class="input-field" name="email" placeholder="john@smith.com" maxlength="86" required/>
         </label>
         <label for="field3"><span>Regarding</span>
           <input type="radio" name="subject" value="Request for Open Beta"/> Open Beta
           <input type="radio" name="subject" value="Inquiry"/> Other<br/>
         </label>
         <label for="field4"><span>Message <span class="required">*</span></span>
-          <textarea name="body" class="textarea-field" placeholder="Hello World!"></textarea>
+          <textarea name="body" class="textarea-field" placeholder="Hello World!" maxlength="" required></textarea>
         </label>
+        
         <label><span>&nbsp;</span>
           <input type="submit" value="Submit"/>
         </label>
