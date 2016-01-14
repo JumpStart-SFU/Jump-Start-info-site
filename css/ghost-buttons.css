@@ -1,0 +1,475 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*
+ * Basic Ghost Button
+ */
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+}
+
+/*
+ * Rounded Corners
+ */
+.ghost-button-rounded-corners {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button-rounded-corners:hover,
+.ghost-button-rounded-corners:active {
+  background-color: #fff;
+  color: #000;
+}
+
+/*
+ * Simple Transition Effect
+ */
+.ghost-button-transition {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-transition:hover,
+.ghost-button-transition:active {
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+/*
+ * Thick Border
+ */
+.ghost-button-thick-border {
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  padding: 8px;
+  color: #fff;
+  border: 3px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-thick-border:hover,
+.ghost-button-thick-border:active {
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+/*
+ * Semi-Transparent Fade
+ */
+.ghost-button-semi-transparent {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+.ghost-button-semi-transparent:hover,
+.ghost-button-semi-transparent:active {
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+/*
+ * Border Color Fade
+ * Blue: #66d8ed
+ */
+.ghost-button-border-color {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: border-color 0.3s ease-out, color 0.3s ease-out;
+  transition: border-color 0.3s ease-out,
+              color 0.3s ease-out;
+}
+.ghost-button-border-color:hover,
+.ghost-button-border-color:active {
+  color: #66d8ed;
+  border-color: #66d8ed;
+  -webkit-transition: border-color 0.4s ease-in, color 0.4s ease-in;
+  transition: border-color 0.4s ease-in,
+              color 0.4s ease-in;
+}
+
+/*
+ * Full Color Fade
+ * Purple: #9363c4
+ */
+.ghost-button-full-color {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+.ghost-button-full-color:hover,
+.ghost-button-full-color:active {
+  background-color: #9363c4;
+  border-color: #9363c4;
+  color: #fff;
+  -webkit-transition:color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+/*
+ * Size Transition Effect
+ */
+.ghost-button-size-transition {
+  display: inline-block;
+  width: 200px;
+  height: 25px;
+  line-height: 25px;
+  margin: 0 auto;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: width 0.3s ease-out, height 0.3s ease-out, line-height 0.3s ease-out;
+  transition: width 0.3s ease-out,
+              height 0.3s ease-out,
+              line-height 0.3s ease-out;
+}
+.ghost-button-size-transition:hover,
+.ghost-button-size-transition:active {
+  width: 220px;
+  height: 45px;
+  line-height: 45px;
+  -webkit-transition: width 0.1s ease-in, height 0.1s ease-in, line-height 0.1s ease-in;
+  transition: width 0.1s ease-in,
+              height 0.1s ease-in,
+              line-height 0.1s ease-in;
+}
+
+/* Footer stuff*/
+.footer {
+  padding-top: 2%;
+  width: 100%;
+  background-color: #111111;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  }
+.footerContent p {
+    margin: 0;
+    color: #4299BE;
+}
+
+.footerIcon {
+    width: 40px;
+    height: 40px;
+    margin: 3px 0;
+}
+
+h6 {
+    font-family: "Din";
+    font-size: 14pt;
+    color: white;
+    margin: 0;
+    padding: 0;
+}/*footer stuff end */
+
+/* Basic */
+body {
+  color: #fff;
+  background: #000 url("../img/bg.jpg") no-repeat center center; /*double loading to get rid of this odd white space between contain 1 and 2. DO not remove this line unless problem is solved*/
+  background-attachment: fixed;
+  background-size: cover;
+  font: 300 18px/22px "Raleway", sans-serif;
+}
+
+/* Typography */
+h1, h2 {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
+}
+h1 {
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.1em;
+}
+h2 {
+  margin: 40px auto 10px auto;
+  font-size: 27px;
+  line-height: 33px;
+}
+
+/* Layout */
+
+
+.container1 {
+  
+  padding-top: 10%;
+  max-width: 100%;
+  min-height:30em; 
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/bg.jpg");
+  text-align: center;
+  
+}
+
+.container2 {
+  padding-top: 10%;
+   max-width: 100%;
+   min-height:30em;
+   width: 100%;
+  background-size: cover; 
+
+ 
+  text-align: center;
+  background-color: grey;
+}
+
+.container3 {
+  padding-top: 10%;
+  max-width: 100%;
+  min-height:30em; 
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/GradientBlue.png");
+  text-align: center;
+  padding-bottom: 10%;
+  
+}
+
+.container4 {
+  padding-top: 10%;
+  max-width: 100%;
+  min-height:30em; 
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/bg2.png");
+  text-align: center;
+  padding-bottom: 10%;
+  
+}
+
+.container5 {
+  
+  padding-top: 10%;
+  max-width: 100%;
+  min-height:30em; 
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
+  text-align: center;
+  
+}
+
+/*Container2 STuff*/
+/*inspiration images and word section*/
+.img {
+  position: relative;
+    float: left;
+    width:  100%;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+.img2 {
+  position: relative;
+    float: left;
+    width:  100%;
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+/*Container3 STuff*/
+/*Design VIDEO*/
+.videoContainer iframe {
+    padding-top: 5%;
+    width: 680px;
+    height: 440px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media Queries */
+@media (max-width: 420px) {
+  h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+/*form*/
+
+<style type="text/css">
+.form-style-2{
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-2-heading{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.form-style-2 label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+}
+.form-style-2 label > span{
+    width: 100px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+.form-style-2 span.required{
+    color:red;
+}
+.form-style-2 .tel-number-field{
+    width: 40px;
+    text-align: center;
+}
+.form-style-2 input.input-field{
+    width: 48%;
+    
+}
+
+.form-style-2 input.input-field, 
+.form-style-2 .tel-number-field, 
+.form-style-2 .textarea-field, 
+ .form-style-2 .select-field{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+.form-style-2 .input-field:focus, 
+.form-style-2 .tel-number-field:focus, 
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus{
+    border: 1px solid #0C0;
+}
+.form-style-2 .textarea-field{
+    height:100px;
+    width: 55%;
+}
+.form-style-2 input[type=submit],
+.form-style-2 input[type=button]{
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #FF8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.form-style-2 input[type=submit]:hover,
+.form-style-2 input[type=button]:hover{
+    background: #EA7B00;
+    color: #fff;
+}
+</style>
