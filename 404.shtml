@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="utf-8"/>
   <title>404 Not Found</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="refresh" content="0; url=http://conextus.ca/" />
+  <meta name="description" content="ConextUS, a Friendship application"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="css/ghost-buttons.css"/>
+  <link rel="stylesheet" href="css/media-query.css"/>
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  <meta http-equiv="refresh" content="10; url=http://conextus.ca/" />
 </head>
 <body>
+  <div class="container1">
+    <p>The page you requested was not found! We will automatically refresh you back to our home page in 10 seconds</p>
+  </div>
+  
+  <!--FOOTER START -->
+  <div class="footer">
+    <div class="footerContent">
+      <h6>CONNECT WITH US!</h6>
+      <a href="https://www.facebook.com/Conextus-1490009591318369" target="_blank">
+        <img src="img/facebookIcon.png" class="footerIcon"/>
+      </a>
+      <a href="https://twitter.com/ConexterInc" target="_blank">
+        <img src="img/twitterIcon.png" class="footerIcon"/>
+      </a>
+      <a href="https://instagram.com/conextus.inc/" target="_blank">
+         <img src="img/instagramIcon.png" class="footerIcon"/>
+      </a>
+      <p>Copyright © 2016 | Conextus Incorporated | All Rights Reserved.</p>
+    </div>
+  </div>
+  <!--FOOTER END -->
 </body>
 </html>
